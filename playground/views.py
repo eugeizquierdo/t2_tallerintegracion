@@ -12,7 +12,7 @@ def say_hello(request):
 class LigasListView(View):
     def get(self, request):
         list = Ligas.objects.all()
-        return JsonResponse(list, False)
+        return JsonResponse(list, False) #devolveremos array de objetos json
 
     # def post(self, request):
     #     # post...
